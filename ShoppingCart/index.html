@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+<body ng-app='ShoppingCart'>
+    <h1>Shopping List</h1>
+    <div ng-controller="ShoppingCartController">
+    <ol>
+        <li ng-repeat="item in cart">{{item}}   <button ng-click="removeFromCart(item)">remove</button> </li>
+    </ol>
+    <input type="text" ng-model="newItem">
+    <button ng-click="addToCart()">Add</button>
+    <div>{{errorText}}</div>
+    </div>
+</body>
+</html>
