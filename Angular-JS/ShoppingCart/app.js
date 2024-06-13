@@ -26,3 +26,7 @@
         };
     }
 })();
+
+
+//minification
+// !function(){"use strict";function r(r){r.cart=["Milk","Eggs"],r.errorText="",r.addToCart=function(){var t=r.newItem;-1==r.cart.indexOf(t)?(r.cart.push(t),r.errorText=""):r.errorText="You have already added the item in cart."},r.removeFromCart=function(t){var e=r.cart.indexOf(t);r.cart.splice(e,1)}}angular.module("ShoppingCart",[]).controller("ShoppingCartController",r),r.$inject=["$scope"]}();

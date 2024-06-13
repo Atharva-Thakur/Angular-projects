@@ -3,6 +3,7 @@
     angular.module('DIApp',[]).controller('DIController',DIController);
 
     DIController.$inject('$scope','$filter') //This is the minification safe way to inject dependencies
+    
     function DIController($scope,$filter){
         $scope.name = "";
         $scope.upper= function (){
