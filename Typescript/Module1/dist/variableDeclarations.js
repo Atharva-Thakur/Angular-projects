@@ -1,0 +1,23 @@
+"use strict";
+let isDone = false;
+const pi = 3.14;
+let color = "blue";
+let numbers = [1, 2, 3];
+let tuple = ["hello", 42];
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 0] = "Up";
+    Direction[Direction["Down"] = 1] = "Down";
+    Direction[Direction["Left"] = 2] = "Left";
+    Direction[Direction["Right"] = 3] = "Right";
+})(Direction || (Direction = {}));
+let direction = Direction.Up;
+let notSure = 4;
+notSure = "maybe a string instead";
+console.log("isDone:", isDone);
+console.log("pi:", pi);
+console.log("color:", color);
+console.log("numbers:", numbers);
+console.log("tuple:", tuple);
+console.log("direction:", direction);
+console.log("notSure:", notSure);
